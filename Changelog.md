@@ -5,7 +5,9 @@ It supports [Sinatra](http://www.sinatrarb.com),
 [Padrino](http://www.padrinorb.com) and [Ruby on Rails](http://rubyonrails.org)
 frameworks.
 
-_latest update: Tue Nov  1 18:59:51 CET 2016_
+_latest update: Tue Nov  1 22:47:56 CET 2016_
+
+* Removed CVSS as external dependency. Now it is a Dawn::Cvss module
 
 ## Version 1.6.6 - codename: Tow Mater (2016-11-01)
 

@@ -8,6 +8,7 @@ require "dawn/padrino"
 require "dawn/gemfile_lock"
 require "dawn/reporter"
 require "dawn/logger"
+require "dawn/cvss"
 
 # Datamapper classes
 require 'data_mapper'

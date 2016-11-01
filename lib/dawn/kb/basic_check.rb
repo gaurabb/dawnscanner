@@ -1,5 +1,3 @@
-require 'cvss'
-
 module Dawn
   module Kb
     module BasicCheck
@@ -177,7 +175,7 @@ module Dawn
         # if not set and if cvss is available, than use CVSS
         unless self.cvss.nil?
 
-          score = Cvss::Engine.new.score(self.cvss)
+          score = Dawn::Cvss::Engine.new.score(self.cvss)
           case score
           when 10
             return "critical"
@@ -217,7 +215,7 @@ module Dawn
       end
 
       def cvss_score
-        return Cvss::Engine.new.score(self.cvss) unless self.cvss.nil?
+        return Dawn::Cvss::Engine.new.score(self.cvss) unless self.cvss.nil?
         "    "
       end
 
