@@ -69,12 +69,7 @@
           @target_os[:family] = "unix"; @target_os[:vendor]="openbsd" unless /openbsd/.match(platform).nil?
           @target_os[:family] = "unix"; @target_os[:vendor]="netbsd" unless /netbsd/.match(platform).nil?
 
-          begin 
-            require 'sys/uname'
-            @target_os[:version]= [Sys::Uname.release]
-          rescue # otherwise use shell
-            @target_os[:version] = [`uname -r`.strip]
-          end
+          @target_os[:version] = [`uname -r`.strip]
 
           tmp = ""
           if File.exist?("/etc/SuSE-release")

@@ -8,6 +8,7 @@ frameworks.
 _latest update: Tue Nov  1 22:47:56 CET 2016_
 
 * Removed CVSS as external dependency. Now it is a Dawn::Cvss module
+* Dropped sys-uname dependency. Using shell 'uname -r' instead
 
 ## Version 1.6.6 - codename: Tow Mater (2016-11-01)
 
