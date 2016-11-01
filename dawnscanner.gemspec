@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["paolo@dawnscanner.org"]
   gem.description   = %q{Dawnscanner is a security source code scanner for ruby powered code. It is especially designed for web applications, but it works also with general purpose ruby scripts. Dawn supports all major MVC frameworks like ruby on rails, padrino and sinatra; it provides more than 150 security checks with their own mitigation suggestion.}
   gem.summary       = %q{Dawnscanner is a security source code scanner for ruby powered code. It is crafted with love to make your sinatra, padrino and ruby on rails web applications secure.}
-  gem.homepage      = "http://dawnscanner.org"
+  gem.homepage      = "https://dawnscanner.org"
   gem.files         = `git ls-files`.split($/)
   gem.license       = "MIT"
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
