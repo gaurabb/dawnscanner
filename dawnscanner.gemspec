@@ -27,7 +27,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'terminal-table'
   gem.add_dependency 'justify'
   gem.add_dependency 'logger-colors'
-  gem.add_dependency 'ptools'
   gem.add_dependency 'sqlite3'
   gem.add_dependency 'dm-sqlite-adapter'
   gem.add_dependency 'data_mapper'
