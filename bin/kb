@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require "irb"
+require "dawn/utils"
+require "dawn/version"
+require "dawn/logger"
+require "dawn/kb/basic_check"
+require "dawn/kb/version_check"
+require "dawn/knowledge_base_experimental"
+
+APPNAME = File.basename($0)
+
+require 'logger'
+$logger = Logger.new(STDOUT)
+$logger.datetime_format = '%Y-%m-%d %H:%M:%S'
+
+$logger.helo APPNAME, Dawn::VERSION
+
+@kb = Dawn::KnowledgeBaseExperimental.instance
+IRB.start
