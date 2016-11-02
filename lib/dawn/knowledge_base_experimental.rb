@@ -130,14 +130,23 @@ module Dawn
         return []
       end
 
+      $logger.debug "A valid library was found. #{@descriptor}"
+
+      if @descriptor.nil?
+        $logger.error("AIEEE KB description is nil here and must never occur")
+        return false
+      end
+
       unless __load?
-        $logger.error "The library must be consumed with dawnscanner up to v#{$descriptor["kb"]["api"]}. You are using dawnscanner v#{Dawn::VERSION}"
+        $logger.error "The library must be consumed with dawnscanner up to v#{@descriptor[:kb][:api]}. You are using dawnscanner v#{Dawn::VERSION}"
         return []
       end
 
+      $logger.debug "A valid knowledge base it has been found"
+
       # TODO: untar and unzip from here (look for it in Google)
       if __packed?
-        $logger.info "a packed knowledge base it has been found. Unpacking it"
+        $logger.debug "A packed knowledge base it has been found. Unpacking it"
         __unpack
       end
 
@@ -160,7 +169,7 @@ module Dawn
 
     end
 
-    def dump(verbose=false)
+    def self.dump(verbose=false)
       puts "Security checks currently supported:"
       i=0
       KnowledgeBaseExperimental.instance.all.each do |check|
@@ -231,11 +240,12 @@ module Dawn
     end
 
     def __load?
-      api = $descriptor["kb"]["api"]
+
+      api = @descriptor[:kb][:api]
       v = Dawn::VERSION
       require "dawn/kb/version_check"
 
-      vc = VersionCheck.new
+      vc = Dawn::Kb::VersionCheck.new
       return true if vc.is_higher?(api, v) # => true if v > api
       return false
     end
