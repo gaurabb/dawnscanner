@@ -17,6 +17,7 @@ _latest update: Fri Nov 11 16:20:33 CET 2016_
 * Adding a check for CVE-2016-3693: Information disclosure for safemode gem
 * Adding a check for CVE-2016-2785: Access restriction by pass for Puppet
 * Adding a check for CVE-2015-7580: XSS for rails-html-sanitizer ruby gem
+* Adding a check for CVE-2015-7551: Arbitrary code execution or denial of service for some Ruby interpreters
 
 
 ## Version 1.6.6 - codename: Tow Mater (2016-11-01)
