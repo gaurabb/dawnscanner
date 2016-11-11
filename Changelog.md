@@ -15,6 +15,7 @@ _latest update: Fri Nov 11 16:20:33 CET 2016_
 * Applied pull request #215 - Fixes issue where debug mode was always enabled by @bartj3
 * Applied pull request #214 - Fixes copy in OWAP RoR mitigation message by bartj3
 * Adding a check for CVE-2016-3693: Information disclosure for safemode gem
+* Adding a check for CVE-2016-2785: Access restriction by pass for Puppet
 
 
 ## Version 1.6.6 - codename: Tow Mater (2016-11-01)
