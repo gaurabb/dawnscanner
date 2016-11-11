@@ -12,6 +12,9 @@ _latest update: Tue Nov  1 22:47:56 CET 2016_
 * Dropped ptools dependency. Pattern matching will run also with binary files.
 * Applied pull request #217 - Add bundler as runtime dependency - by @kolybasov
 * Applied pull request #216 - Add TraviCI setup to README - by @vpolimenov
+* Applied pull request #215 - Fixes issue where debug mode was always enabled by @bartj3
+* Applied pull request #214 - Fixes copy in OWAP RoR mitigation message by bartj3
+
 
 ## Version 1.6.6 - codename: Tow Mater (2016-11-01)
 
