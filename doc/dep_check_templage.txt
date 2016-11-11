@@ -1,0 +1,16 @@
+super({
+  :title=>title,
+  :name=> "",
+  :cve=>"",
+  :cvss=>"",
+  :release_date => Date.new(),
+  :cwe=>"",
+  :owasp=>"",
+  :applies=>["rails", "sinatra", "padrino"],
+  :kind=>Dawn::KnowledgeBase::DEPENDENCY_CHECK,
+  :message=>message,
+  :mitigation=>"",
+  :aux_links=>['']
+})
+self.safe_dependencies = [{:name=>"", :version=>['']}]
+
