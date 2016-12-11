@@ -5,7 +5,7 @@ It supports [Sinatra](http://www.sinatrarb.com),
 [Padrino](http://www.padrinorb.com) and [Ruby on Rails](http://rubyonrails.org)
 frameworks.
 
-_latest update: sab 10 dic 2016, 18.15.30, CET_
+_latest update: dom 11 dic 2016, 11.14.50, CET_
 
 * Renamed doc directory to publish website using Github Pages
 * Removed CVSS as external dependency. Now it is a Dawn::Cvss module
@@ -19,6 +19,7 @@ _latest update: sab 10 dic 2016, 18.15.30, CET_
 * Adding a check for CVE-2016-2785: Access restriction by pass for Puppet
 * Adding a check for CVE-2015-7580: XSS for rails-html-sanitizer ruby gem
 * Adding a check for CVE-2015-7551: Arbitrary code execution or denial of service for some Ruby interpreters
+* Adding a check for CVE-2015-3900: DNS hijack attack for RubyGems
 
 
 ## Version 1.6.6 - codename: Tow Mater (2016-11-01)
