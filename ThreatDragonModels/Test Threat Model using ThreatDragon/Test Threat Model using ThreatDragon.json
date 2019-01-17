@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "Test Threat Model using ThreatDragon",
+    "owner": "GaurabB",
+    "description": "Testing the tool"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Gaurab B"
+  }
+}
